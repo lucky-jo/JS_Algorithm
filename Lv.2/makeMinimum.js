@@ -1,12 +1,5 @@
-function solution(_A,_B){
-    const A = _A.sort((a, b) => a - b);
-    const B = _B.sort((a, b) => b - a);
-    let sum = 0;
-    for (let i = 0; i < A.length; i++ ) {
-        sum += A[i] * B[i];
-    }
-
-    return sum;
+function solution(A,B){
+    A.sort((a, b) => a - b);
+    B.sort((a, b) => b - a);
+    return A.reduce((acc,cur,idx) => acc+cur*B[idx],0)
 }
-
-console.log(solution([1, 2, 4],[4, 4, 5]))
