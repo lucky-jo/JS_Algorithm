@@ -20,6 +20,7 @@ function priorityQueue(_arr) {
 }
 
 const arr = [[5,"middle"],[10,"high"],[1,"low"]]
+
 console.log(priorityQueue(arr))
 console.log(priorityQueue(arr))
 console.log(priorityQueue(arr))
